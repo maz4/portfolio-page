@@ -1,13 +1,12 @@
 {
   "name": "portfolio-page",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "deploy": "npm run build && gh-pages -d dist",
     "dev": "gulp devServer",
-    "start" : "npm run dev",
+    "start": "npm run dev",
     "build": "gulp buildDist"
   },
   "pre-commit": [
@@ -43,5 +42,14 @@
     "mustache": "^2.3.0",
     "normalize.scss": "^0.1.0",
     "picturefill": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maz4/portfolio-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maz4/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/maz4/portfolio-page#readme",
+  "description": ""
 }
