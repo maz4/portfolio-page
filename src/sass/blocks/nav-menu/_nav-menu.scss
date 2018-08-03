@@ -1,0 +1,45 @@
+.nav-menu {
+  
+}
+
+.nav-menu__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu__element {
+  height: 5.5rem;
+  text-align: center;
+  background-color: $colour-brown-one;
+  border-bottom: .1rem solid;
+  border-color: $colour-gray-three;
+  color: $colour-white-one;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: $colour-brown-two;
+  }
+  &:active{
+    background-color: $colour-gray-four;
+    color: $colour-black-two;
+  }
+}
+
+.nav-menu__link {
+  font-size: $font-size-six;
+  font-weight: $font-bold;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+}
+
+.nav-menu__link--active{
+  color: $colour-gray-one;
+}
+
+.nav-menu__toggle{
+  display: block;
+  border: none;
+  color: inherit;
+  @include hide-text();
+}
