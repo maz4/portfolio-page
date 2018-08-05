@@ -1,0 +1,60 @@
+.title {
+  background-image: url("../img/fed-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title__inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.title__header {
+  margin: 0;
+  margin-bottom: 2rem;
+  color: $colour-white-one;
+  font-size: $font-size-four;
+  line-height: $line-height-one;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem;
+    border-bottom-style: solid;
+    border-bottom-color: $colour-white-one;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    border-top: 0.1rem;
+    border-top-style: solid;
+    border-top-color: $colour-white-one;
+  }
+}
+
+.title__button {
+  border: .1rem;
+  border-style: solid;
+  border-color: $colour-white-one;
+  background: transparent;
+  color: $colour-white-one;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
+  text-transform: uppercase;
+  
+  &:hover {
+    opacity: .7;
+  }
+  
+  &:active {
+    opacity: .3;
+  }
+}

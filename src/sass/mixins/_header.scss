@@ -1,0 +1,10 @@
+@mixin header ($size) {
+  @if $size == h1 {
+    font-size: $font-size-one;
+    line-height: $line-height-one;
+  }
+
+  margin-top: 0;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
