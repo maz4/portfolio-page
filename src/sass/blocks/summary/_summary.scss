@@ -1,0 +1,27 @@
+.summary__divider{
+  fill: $colour-white-one;
+  background-color: $colour-gray-one;
+}
+
+.summary__inner {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.summary__header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: $font-size-five;
+  line-height: $line-height-one;
+  font-weight: $font-bold;
+}
+
+.summary__paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
+  text-align: justify;
+}

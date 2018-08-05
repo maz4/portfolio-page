@@ -4,6 +4,10 @@
     line-height: $line-height-one;
   }
 
+  @else if $size == h2 {
+    font-size: $font-size-two;
+    line-height: $line-height-one;
+  }
   margin-top: 0;
   font-weight: $font-bold;
   text-transform: uppercase;
