@@ -10,37 +10,36 @@
 
 .nav-menu__element {
   height: 5.5rem;
+  color: $colour-white-one;
   text-align: center;
-  background-color: $colour-brown-one;
   border-bottom: .1rem solid;
   border-color: $colour-gray-three;
-  color: $colour-white-one;
   cursor: pointer;
 
   &:last-child{
     border-bottom: none;
   }
-
-  &:hover {
-    background-color: $colour-brown-two;
-  }
-  &:active {
-    background-color: $colour-gray-four;
-    color: $colour-black-two;
-  }
 }
 
 .nav-menu__link {
+  display: block;
+  color: $colour-white-one;
   font-size: $font-size-six;
   font-weight: $font-bold;
   line-height: 5.5rem;
   text-transform: uppercase;
-  color: $colour-white-one;
   text-decoration: none;
+  background-color: $colour-brown-one;
 
-  // &:active{
-  // color: $colour-white-one;
-  // }
+
+  &:hover {
+    color: $colour-white-one;
+    background-color: $colour-brown-two;
+  }
+  &:active {
+    color: $colour-black-two;
+    background-color: $colour-gray-four;
+  }
 }
 
 .nav-menu__link--active {
