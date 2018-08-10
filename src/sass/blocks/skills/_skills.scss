@@ -42,7 +42,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -50,7 +50,7 @@
   display: inline-block;
   width: 14rem;
   margin: 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-size: $font-size-six;
   font-weight: $font-bold;
   text-transform: capitalize;
@@ -60,19 +60,18 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 3rem;
-  margin-bottom: 2rem;
+  height: 2.5rem;
   background-color: $colour-gray-six;
-
+  
   &::after {
     content: "50%";
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
-    height: 3rem;
+    height: 2.5rem;
     font-size: $font-size-seven;
-    line-height: 2rem;
+    line-height: 2.5rem;
     color: $colour-white-one;
     background: $colour-green-one;
     text-align: right;
