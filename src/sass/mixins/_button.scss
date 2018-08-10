@@ -1,0 +1,12 @@
+@mixin button($colour) {
+  border: .2rem;
+  border-style: solid;
+  border-color: $colour;
+  background: transparent;
+  color: $colour;
+  font-size: $font-size-seven;
+  font-weight: $font-bold;
+  line-height: $line-height-one;
+  text-transform: uppercase;
+  outline: none;
+}

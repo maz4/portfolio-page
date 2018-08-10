@@ -1,0 +1,82 @@
+.skills__inner {
+@include inner-padding($inner-wrapper-padding-one);
+}
+
+.skills__header {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: $colour-gray-four;
+  font-size: $font-size-five;
+  line-height: $line-height-one;
+  font-weight: $font-bold;
+}
+
+.skills__paragraph {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
+  text-align: justify;
+}
+
+.skills__button {
+  @include button($colour-green-one);
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}
+
+.skills__list {
+  padding: 0;
+  padding-top: 2rem;
+  margin: 0;
+  list-style: none;
+}
+
+.skills__element {
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 3rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: .3rem;
+    left: 9rem;
+    width: 64%;
+    height: 2rem;
+    border: 0.1rem;
+    border-style: solid;
+    border-color: $colour-black-one;
+  }
+
+  &::after {
+    content: "50%";
+    display: inline-block;
+    position: absolute;
+    top: .4rem;
+    left: 9rem;
+    width: 50%;
+    height: 2rem;
+    background: $colour-green-one;
+    font-size: $font-size-seven;
+    line-height: 2rem;
+    color: $colour-white-one
+  }
+}
+
+.skills__name {
+  margin: 0;
+  line-height: 3rem;
+  font-size: $font-size-six;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+}

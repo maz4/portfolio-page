@@ -1,0 +1,6 @@
+@mixin inner-padding($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
