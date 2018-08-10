@@ -35,6 +35,12 @@
   font-weight: $font-bold;
   line-height: 5.5rem;
   text-transform: uppercase;
+  color: $colour-white-one;
+  text-decoration: none;
+
+  // &:active{
+  // color: $colour-white-one;
+  // }
 }
 
 .nav-menu__link--active {
