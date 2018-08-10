@@ -1,0 +1,45 @@
+.education__inner {
+  @include inner-padding($inner-wrapper-padding-one);
+
+  &:after{
+    content:"";
+    display: block;
+    width: 100%;
+    border: 0.5px;
+    border-style: solid;
+    border-color: $colour-black-one;
+  }
+}
+
+.education__header {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: $colour-gray-four;
+  font-size: $font-size-five;
+  line-height: $line-height-one;
+  font-weight: $font-bold;
+}
+
+.education__paragraph {
+  @include paragraph($font-size-seven);
+  // margin-top: 0;
+  // margin-bottom: 2rem;
+  // font-size: $font-size-seven;
+  // line-height: $line-height-one;
+  // text-align: justify;
+}
+
+.education__name {
+  display: inline-block;
+  margin: 0;
+  line-height: 2.5rem;
+  font-size: $font-size-six;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+}
+
+.education__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
