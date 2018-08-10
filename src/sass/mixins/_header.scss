@@ -1,14 +1,26 @@
 @mixin header ($size) {
-  @if $size == h1 {
-    font-size: $font-size-one;
+  @if $size==h1 {
+    margin-bottom: 2rem;
+    color: $colour-white-one;
+    font-size: $font-size-four;
     line-height: $line-height-one;
+    text-transform: uppercase;
   }
 
-  @else if $size == h2 {
-    font-size: $font-size-two;
+  @else if $size==h2 {
+    margin-bottom: 3rem;
+    color: $colour-gray-four;
+    font-size: $font-size-five;
     line-height: $line-height-one;
+    text-transform: uppercase;
+  }
+
+  @else if $size==h3 {
+    color: $colour-gray-four;
+    font-size: $font-size-six;
+    line-height: 2.5rem;
+    text-transform: capitalize;
   }
   margin-top: 0;
   font-weight: $font-bold;
-  text-transform: uppercase;
 }

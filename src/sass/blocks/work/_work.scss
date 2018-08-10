@@ -1,0 +1,35 @@
+.work__inner{
+  @include inner-padding($inner-wrapper-padding-one);
+}
+
+.work__header {
+  @include header(h2);
+}
+
+.work__paragraph{
+  @include paragraph($font-size-seven);
+}
+
+.work__list{
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+
+.work__name{
+  @include header(h3);
+}
+
+.work__company{
+  @include paragraph($font-size-seven);
+  text-transform: uppercase;
+  font-weight: $font-bold;
+}
+
+.work__dates{
+  @include paragraph($font-size-seven);
+}
+
+.work__duties {
+  @include paragraph($font-size-seven);
+}
