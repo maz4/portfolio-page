@@ -1,0 +1,50 @@
+.form__name,
+.form__email {
+  padding-bottom: 2rem;
+}
+
+.form__label {
+  display: block;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
+  color: $colour-white-one;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  color: $colour-white-one;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
+  background-color: $colour-gray-two;
+}
+
+.form__input--text-area {
+  min-height: 12rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.form__button {
+  border: none;
+  background-color: $colour-brown-three;
+  color: $colour-white-one;
+  font-size: $font-size-seven;
+  font-weight: $font-bold;
+  line-height: $line-height-one;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    opacity: .7;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
