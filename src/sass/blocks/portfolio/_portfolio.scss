@@ -1,0 +1,30 @@
+.portfolio__inner {
+  @include inner-padding($inner-wrapper-padding-one);
+  background-color: $colour-gray-six;
+}
+
+.portfolio__header {
+  @include header(h2);
+}
+
+.portfolio__description {
+  @include paragraph($font-size-seven);
+}
+
+.portfolio__link {
+  &:active {
+    color: $colour-black-one;
+  }
+}
+
+.portfolio__thumbnail {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
