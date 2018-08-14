@@ -2,11 +2,12 @@
   background-image: url("../img/fed-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .title__inner {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   padding-left: 20%;
   padding-right: 20%;
   text-align: center;
@@ -41,14 +42,15 @@
 }
 
 .title__button {
-  border: .1rem;
-  border-style: solid;
-  border-color: $colour-white-one;
-  background: transparent;
-  color: $colour-white-one;
-  font-size: $font-size-seven;
-  line-height: $line-height-one;
-  text-transform: uppercase;
+  @include button($colour-white-one)
+  // border: .1rem;
+  // border-style: solid;
+  // border-color: $colour-white-one;
+  // background: transparent;
+  // color: $colour-white-one;
+  // font-size: $font-size-seven;
+  // line-height: $line-height-one;
+  // text-transform: uppercase;
   
   &:hover {
     opacity: .7;
