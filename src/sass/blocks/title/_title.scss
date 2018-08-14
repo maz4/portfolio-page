@@ -42,15 +42,7 @@
 }
 
 .title__button {
-  @include button($colour-white-one)
-  // border: .1rem;
-  // border-style: solid;
-  // border-color: $colour-white-one;
-  // background: transparent;
-  // color: $colour-white-one;
-  // font-size: $font-size-seven;
-  // line-height: $line-height-one;
-  // text-transform: uppercase;
+  @include button($colour-white-one);
   
   &:hover {
     opacity: .7;
