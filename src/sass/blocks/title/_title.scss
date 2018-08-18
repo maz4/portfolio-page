@@ -1,5 +1,5 @@
 .title {
-  background-image: url("../img/fed-background-mobile@1x.jpg");
+  @include img-retina("../img/fed-background-mobile@1x.jpg", "../img/fed-background-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,5 +50,16 @@
   
   &:active {
     opacity: .3;
+  }
+}
+
+@include screen-size($tablet-screen){
+  .title{
+    @include img-retina("../img/fed-background-tablet@1x.jpg", "../img/fed-background-tablet@2x.jpg");
+  }
+
+  .title__inner {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
   }
 }
