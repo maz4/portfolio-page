@@ -26,3 +26,8 @@
   line-height: $line-height-one;
   text-align: justify;
 }
+@include screen-size($tablet-screen){
+  .summary__divider {
+    display: none;
+  }
+}
