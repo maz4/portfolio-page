@@ -17,31 +17,21 @@
 }
 
 .about__header {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: $colour-gray-four;
-  font-size: $font-size-five;
-  opacity: 1;
-  line-height: $line-height-one;
-  font-weight: $font-bold;
+  @include header(h2);
 }
 
 .about__paragraph {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-size: $font-size-seven;
-  line-height: $line-height-one;
-  text-align: justify;
+  @include paragraph($font-size-seven);
 }
 
 .about__link {
   color: $colour-black-one;
-
+  
   &:active {
     color: $colour-black-two;
     font-weight: $font-bold;
   }
-
+  
   &:hover {
     font-weight: $font-bold;
     color: $colour-gray-two;
@@ -66,7 +56,7 @@
   position: relative;
   padding-left: 3rem;
   list-style: none;
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -116,7 +106,7 @@
     display: flex;
     padding: 0;
   }
-
+  
   .about__photo {
     width: 50%;
     flex-grow: 0;
@@ -125,7 +115,7 @@
     text-align: unset;
 
     & img {
-      width: 100%;;
+      width: 100%;
       border: none;
       border-style: none;
       border-radius: 0;

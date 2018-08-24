@@ -4,27 +4,20 @@
 }
 
 .resume__header {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  color: $colour-gray-four;
-  font-size: $font-size-five;
-  line-height: $line-height-one;
-  font-weight: $font-bold;
+  @include header(h2);
 }
 
 .resume__paragraph {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-size: $font-size-seven;
-  line-height: $line-height-one;
-  text-align: justify;
+  @include paragraph($font-size-seven);
 }
 
 .resume__button {
   @include button($colour-green-two);
+
   &:hover {
     opacity: .5;
   }
+
   &:active {
     opacity: .3;
   }
@@ -33,10 +26,6 @@
 @include screen-size($tablet-screen){
   .resume__inner {
     text-align: center;
-  }
-
-  .resume__header {
-    margin-bottom: 1rem;
   }
 
   .resume__paragraph {

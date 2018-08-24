@@ -14,24 +14,26 @@
 }
 
 .contact__email {
-  @include paragraph($font-size-seven);
+  margin-top: 0;
   margin-bottom: 0;
+  font-size: $font-size-seven;
+  line-height: $line-height-one;
   color: $colour-white-one;
+  text-align: justify;
 
   &::after{
     content: "zasadzkimarcin@gmail.com";
     color: $colour-gray-three;
-    margin-left: 15px;
+    margin-left: 1.5rem;
   }
 }
 .contact__phone {
   @include paragraph($font-size-seven);
-
   color: $colour-white-one;
 
   &::after{
     content: "+44 7474151958";
     color: $colour-gray-three;
-    margin-left: 10px;
+    margin-left: 1rem;
   }
 }

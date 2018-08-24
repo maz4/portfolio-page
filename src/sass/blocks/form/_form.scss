@@ -26,12 +26,16 @@
 }
 
 .form__input--text-area {
+  margin-bottom: 2rem;
   min-height: 12rem;
   resize: none;
-  margin-bottom: 2rem;
 }
 
 .form__button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 5%;
+  padding-right: 5%;
   border: none;
   background-color: $colour-brown-three;
   color: $colour-white-one;

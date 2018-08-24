@@ -11,6 +11,10 @@
   @include paragraph($font-size-seven);
 }
 
+.portfolio__wrapper {
+  text-align: center;
+}
+
 .portfolio__link {
   &:active {
     color: $colour-black-one;
@@ -26,5 +30,9 @@
 
   &:hover {
     transform: scale(1.02);
+  }
+
+  &:active {
+    opacity: .7;
   }
 }

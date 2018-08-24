@@ -14,14 +14,8 @@
 }
 
 .title__header {
-  margin: 0;
-  margin-bottom: 2rem;
-  color: $colour-white-one;
-  font-size: $font-size-four;
-  line-height: $line-height-one;
-  font-weight: $font-bold;
-  text-transform: uppercase;
-
+  @include header(h1);
+  
   &:before {
     content: "";
     display: block;
@@ -30,7 +24,7 @@
     border-bottom-style: solid;
     border-bottom-color: $colour-white-one;
   }
-  
+
   &:after {
     content: "";
     display: block;
@@ -53,11 +47,11 @@
   }
 }
 
-@include screen-size($tablet-screen){
-  .title{
+@include screen-size($tablet-screen) {
+  .title {
     @include img-retina("../img/fed-background-tablet@1x.jpg", "../img/fed-background-tablet@2x.jpg");
   }
-
+  
   .title__inner {
     padding-top: 20rem;
     padding-bottom: 20rem;

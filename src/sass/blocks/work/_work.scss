@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+.work__element {
+  padding-bottom: 1rem;
+}
+
 .work__name{
   @include header(h3);
 }
@@ -23,7 +27,7 @@
 .work__company{
   @include paragraph($font-size-seven);
   text-transform: uppercase;
-  font-weight: $font-bold;
+  font-weight: $font-bold;  
 }
 
 .work__dates{

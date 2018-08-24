@@ -15,17 +15,16 @@
   @include header(h2);
 }
 
-.education__paragraph {
-  @include paragraph($font-size-seven);
-}
-
 .education__name {
-  display: inline-block;
   margin: 0;
   line-height: 2.5rem;
   font-size: $font-size-six;
   font-weight: $font-bold;
   text-transform: capitalize;
+}
+
+.education__paragraph {
+  @include paragraph($font-size-seven);
 }
 
 .education__list {

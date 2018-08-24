@@ -7,26 +7,19 @@
 .summary__inner {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
 .summary__header {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: $font-size-five;
-  line-height: $line-height-one;
-  font-weight: $font-bold;
+  @include header(h2);
 }
 
 .summary__paragraph {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: $font-size-seven;
-  line-height: $line-height-one;
-  text-align: justify;
+  @include paragraph($font-size-seven);
 }
-@include screen-size($tablet-screen){
+
+@include screen-size($tablet-screen) {
   .summary__divider {
     display: none;
   }
