@@ -1,6 +1,6 @@
 @mixin paragraph($font-size) {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: $font-size;
   line-height: $line-height-one;
   text-align: justify;
