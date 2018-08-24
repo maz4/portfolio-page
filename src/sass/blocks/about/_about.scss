@@ -18,7 +18,7 @@
 
 .about__header {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: $colour-gray-four;
   font-size: $font-size-five;
   opacity: 1;
@@ -119,6 +119,8 @@
 
   .about__photo {
     width: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
     flex-basis: 50%;
     text-align: unset;
 
@@ -134,13 +136,11 @@
     padding-top: 2rem;
     padding-bottom: 3rem;
     padding-left: $inner-wrapper-padding-two;
-    padding-right: $inner-wrapper-padding-two;
+    padding-right: $inner-wrapper-padding-one;
+    flex-grow: 0;
+    flex-shrink: 1;
     width: 50%;
     flex-basis: 50%;
-  }
-
-  .about__list-header{
-    line-height: 3.5rem;
   }
 
   .about__divider {
