@@ -21,11 +21,25 @@
 }
 
 .resume__button {
-  @include button($colour-green-one);
+  @include button($colour-green-two);
   &:hover {
-    opacity: .7;
+    opacity: .5;
   }
   &:active {
     opacity: .3;
+  }
+}
+
+@include screen-size($tablet-screen){
+  .resume__inner {
+    text-align: center;
+  }
+
+  .resume__header {
+    margin-bottom: 1rem;
+  }
+
+  .resume__paragraph {
+    text-align: center;
   }
 }
