@@ -12,6 +12,7 @@
 }
 
 .portfolio__wrapper {
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -34,5 +35,20 @@
 
   &:active {
     opacity: .7;
+  }
+}
+
+@include screen-size($tablet-screen){
+  .portfolio__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio__link {
+    width:45%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: 45%;
   }
 }
