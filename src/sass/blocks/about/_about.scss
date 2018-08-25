@@ -137,3 +137,49 @@
     display: none;
   }
 }
+
+@include screen-size($desktop-screen) {
+  .about__introduction{
+    padding-left: 10.1%;
+    padding-right: 10.1%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .about__header {
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }
+
+  .about__paragraph {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+    margin-bottom: 8rem;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__element {
+    padding-left: 6rem;
+    width: 38%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: 38%;
+    margin-bottom: 4rem;
+
+    &::before{
+      top: 0;
+      height: 3rem;
+      width: 3rem;
+      background-size: 3rem 3rem;
+    }
+  }
+
+  .about__list-header {
+    font-size: $font-size-eight;
+    line-height: 3rem;
+  }
+}
