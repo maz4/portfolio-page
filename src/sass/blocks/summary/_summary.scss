@@ -24,3 +24,22 @@
     display: none;
   }
 }
+
+@include screen-size($desktop-screen) {
+  .summary__inner {
+    padding-left: 13.25%;
+    padding-right: 13.25%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .summary__header {
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }
+
+  .summary__paragraph {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+  }
+}
