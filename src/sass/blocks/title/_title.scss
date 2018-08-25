@@ -57,3 +57,34 @@
     padding-bottom: 20rem;
   }
 }
+
+@include screen-size($desktop-screen) {
+  .title {
+    @include img-retina("../img/fed-background-desktop@1x.jpg", "../img/fed-background-desktop@2x.jpg");
+  }
+  .title__inner {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .title__header {
+    font-size: 5rem;
+    font-weight: $font-regular;
+    line-height: 5.6rem;
+    &:before {
+      margin-bottom: 2rem;
+    }
+
+    &:after {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .title__button {
+    width: 18.5rem;
+    height: 6rem;
+    font-size: $font-size-five;
+    line-height: $font-size-three;
+  }
+}
