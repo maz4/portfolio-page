@@ -52,3 +52,28 @@
     opacity: .3;
   }
 }
+
+@include screen-size($desktop-screen) {
+  .form {
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  .form__label {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+  }
+
+  .form__input--text-area{
+    resize: vertical;
+  }
+
+  .form__button {
+    width: 18.5rem;
+    height: 4.5rem;
+    font-size: $font-size-five;
+    line-height: $font-size-three;
+  }
+}

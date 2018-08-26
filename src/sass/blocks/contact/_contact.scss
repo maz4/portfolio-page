@@ -37,3 +37,32 @@
     margin-left: 1rem;
   }
 }
+
+@include screen-size($desktop-screen){
+  .contact__inner{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 13.25%;
+    padding-right: 13.25%;
+  }
+
+  .contact__description{
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  .contact__header{
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }
+
+  .contact__paragraph,
+  .contact__email,
+  .contact__phone {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+  }
+}
