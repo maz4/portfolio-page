@@ -7,7 +7,7 @@
   @include header(h2);
 }
 
-.portfolio__description {
+.portfolio__paragraph {
   @include paragraph($font-size-seven);
 }
 
@@ -38,6 +38,7 @@
   }
 }
 
+// Tablet screen
 @include screen-size($tablet-screen){
   .portfolio__wrapper {
     display: flex;
@@ -50,5 +51,38 @@
     flex-shrink: 1;
     flex-grow: 0;
     flex-basis: 45%;
+  }
+}
+
+// Desktop screen
+@include screen-size($desktop-screen){
+  .portfolio__inner {
+    padding-left: 13.25%;
+    padding-right: 13.25%;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+  }
+
+  .portfolio__header {
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }  
+
+  .portfolio__paragraph {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+  }
+
+  .portfolio__wrapper {
+    justify-content: flex-start;
+  }
+
+  .portfolio__link {
+    flex-basis: 30%;
+    margin-right: 4.5rem;
+
+    &:nth-child(3n) { 
+      margin-right: 0;
+    }
   }
 }
