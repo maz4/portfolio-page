@@ -33,3 +33,39 @@
   margin: 0;
   list-style: none;
 }
+
+@include screen-size($desktop-screen){
+  .education {
+    width: 45%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 45%;
+  }
+
+  .education__inner {
+    padding-left: 0;
+    padding-right: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:after{
+      display: none;
+    }
+  }
+
+  .education__header {
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }
+
+  .education__name {
+    font-size: $font-size-four;
+    line-height: $line-height-one;
+    padding-bottom: 2rem;
+  }
+
+  .education__paragraph {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+  }
+}

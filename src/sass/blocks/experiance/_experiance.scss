@@ -1,0 +1,10 @@
+@include screen-size($desktop-screen){
+  .experiance {
+    padding-left: 13.25%;
+    padding-right: 13.25%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
