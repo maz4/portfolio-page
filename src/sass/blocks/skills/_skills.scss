@@ -75,6 +75,7 @@
   }
 }
 
+// Tablet screen
 @include screen-size($tablet-screen) {
   .skills__link {
     display: block;
@@ -93,5 +94,57 @@
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 45%;
+  }
+}
+
+// Desktop screen
+@include screen-size($desktop-screen){
+  .skills__inner{
+    display: flex;
+    padding-left: 13.25%;
+    padding-right: 13.25%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .skills__description{
+    width:50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding-right: 8rem;
+  }
+
+  .skills__header {
+    font-size: $font-size-two;
+    margin-bottom: 5rem;
+  }
+
+  .skills__paragraph {
+    font-size: $font-size-five;
+    line-height: $line-height-two;
+    margin-bottom: 4rem;
+  }
+
+  .skills__list {
+    display: block;
+    width:50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  .skills__element {
+    width: 100%;
+  }
+
+  .skills__link {
+    text-align: left;
+  }
+  .skills__button {
+    width: 18.5rem;
+    height: 4.5rem;
+    font-size: $font-size-five;
+    line-height: $font-size-three;
   }
 }
