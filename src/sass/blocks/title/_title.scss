@@ -37,6 +37,8 @@
 
 .title__button {
   @include button($colour-white-one);
+  margin: 0 auto;
+  width: 10rem;
   
   &:hover {
     opacity: .7;

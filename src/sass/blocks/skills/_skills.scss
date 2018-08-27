@@ -10,8 +10,13 @@
   @include paragraph($font-size-seven)
 }
 
+.skills__link {
+  text-decoration: none;
+}
+
 .skills__button {
   @include button($colour-green-two);
+  width: 10rem;
 
   &:hover {
     opacity: .7;

@@ -11,8 +11,13 @@
   @include paragraph($font-size-seven);
 }
 
+.resume__link {
+  text-decoration: none;
+}
+
 .resume__button {
   @include button($colour-green-two);
+  width: 11rem;
 
   &:hover {
     opacity: .5;
