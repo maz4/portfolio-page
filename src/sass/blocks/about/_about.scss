@@ -1,6 +1,5 @@
 .about__inner {
-  padding-left: 10%;
-  padding-right: 10%;
+  @include inner-padding($padding-one);
   padding-top: 2rem;
   padding-bottom: 3rem;
   background-color: $colour-gray-six;
@@ -101,6 +100,7 @@
   background-color: $colour-white-one;
 }
 
+// Tablet screen
 @include screen-size($tablet-screen) {
   .about__inner {
     display: flex;
@@ -125,8 +125,9 @@
   .about__introduction {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    padding-left: $inner-wrapper-padding-two;
-    padding-right: $inner-wrapper-padding-one;
+
+    @include inner-padding($padding-six);
+
     flex-grow: 0;
     flex-shrink: 1;
     width: 50%;
@@ -138,10 +139,10 @@
   }
 }
 
+// Desktop Screen
 @include screen-size($desktop-screen) {
   .about__introduction{
-    padding-left: 10.1%;
-    padding-right: 10.1%;
+    @include inner-padding($padding-two);
     padding-top: 7rem;
     padding-bottom: 7rem;
   }

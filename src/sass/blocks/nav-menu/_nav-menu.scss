@@ -73,6 +73,7 @@
   background-image: url("../img/icon-menu--white.svg");
 }
 
+// Tablet Screen
 @include screen-size($tablet-screen) {
   .nav-menu__list {
     display: flex;
@@ -91,8 +92,6 @@
   }
 
   .nav-menu__link {
-
-    // line-height: $line-height-two;
     &:hover {
       background-color: transparent;
     }
@@ -107,6 +106,7 @@
   }
 }
 
+// Desktop screen
 @include screen-size($desktop-screen) {
   .nav-menu {
     position: absolute;

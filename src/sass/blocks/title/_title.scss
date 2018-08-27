@@ -6,10 +6,9 @@
 }
 
 .title__inner {
+  @include inner-padding($padding-four);
   padding-top: 15rem;
   padding-bottom: 15rem;
-  padding-left: 20%;
-  padding-right: 20%;
   text-align: center;
 }
 
@@ -33,6 +32,10 @@
     border-top-style: solid;
     border-top-color: $colour-white-one;
   }
+}
+
+.title__link {
+  text-decoration: none;
 }
 
 .title__button {
@@ -66,11 +69,11 @@
   .title {
     @include img-retina("../img/fed-background-desktop@1x.jpg", "../img/fed-background-desktop@2x.jpg");
   }
+
   .title__inner {
+    @include inner-padding($padding-five);
     padding-top: 20rem;
     padding-bottom: 20rem;
-    padding-left: 30%;
-    padding-right: 30%;
   }
 
   .title__header {
@@ -92,6 +95,6 @@
     width: 18.5rem;
     height: 5rem;
     font-size: $font-size-five;
-    line-height: $font-size-three;
+    line-height: $line-height-four;
   }
 }

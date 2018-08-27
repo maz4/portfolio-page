@@ -1,5 +1,7 @@
 .portfolio__inner {
-  @include inner-padding($inner-wrapper-padding-one);
+  @include inner-padding($padding-one);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: $colour-gray-six;
 }
 
@@ -57,8 +59,7 @@
 // Desktop screen
 @include screen-size($desktop-screen){
   .portfolio__inner {
-    padding-left: 13.25%;
-    padding-right: 13.25%;
+    @include inner-padding($padding-three);
     padding-bottom: 7rem;
     padding-top: 7rem;
   }

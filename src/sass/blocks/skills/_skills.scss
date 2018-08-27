@@ -1,5 +1,7 @@
 .skills__inner {
-  @include inner-padding($inner-wrapper-padding-one);
+  @include inner-padding($padding-one);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .skills__header {
@@ -106,8 +108,9 @@
 @include screen-size($desktop-screen){
   .skills__inner{
     display: flex;
-    padding-left: 13.25%;
-    padding-right: 13.25%;
+
+    @include inner-padding($padding-three);
+
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
@@ -150,6 +153,6 @@
     width: 18.5rem;
     height: 4.5rem;
     font-size: $font-size-five;
-    line-height: $font-size-three;
+    line-height: $line-height-five;
   }
 }

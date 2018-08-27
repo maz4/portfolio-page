@@ -1,5 +1,5 @@
 .work__inner{
-  @include inner-padding($inner-wrapper-padding-one);
+  @include inner-padding($padding-one);
 }
 
 .work__header {
@@ -38,17 +38,18 @@
   @include paragraph($font-size-seven);
 }
 
+// Desktop screen
 @include screen-size($desktop-screen){
   .work {
-    width: 45%;
+    width: 50%;
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 45%;
+    flex-basis: 50%;
   }
 
   .work__inner {
-    padding-left: 0;
-    padding-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
   }

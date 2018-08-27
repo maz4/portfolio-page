@@ -14,8 +14,9 @@
 .form__input {
   display: block;
   width: 100%;
-  padding-left: .5rem;
-  padding-right: .5rem;
+
+  @include inner-padding($padding-input);
+
   box-sizing: border-box;
   outline: 0;
   border: 0;
@@ -34,8 +35,9 @@
 .form__button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 5%;
-  padding-right: 5%;
+
+  @include inner-padding($padding-six);
+
   border: none;
   background-color: $colour-brown-three;
   color: $colour-white-one;
@@ -53,6 +55,7 @@
   }
 }
 
+// Desktop Screen
 @include screen-size($desktop-screen) {
   .form {
     width: 50%;

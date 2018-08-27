@@ -1,5 +1,7 @@
 .contact__inner {
-  @include inner-padding(10%);
+  @include inner-padding($padding-one);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: $colour-brown-one;
 }
 
@@ -41,10 +43,10 @@
 @include screen-size($desktop-screen){
   .contact__inner{
     display: flex;
+
+    @include inner-padding($padding-three);
     padding-top: 7rem;
     padding-bottom: 7rem;
-    padding-left: 13.25%;
-    padding-right: 13.25%;
   }
 
   .contact__description{
