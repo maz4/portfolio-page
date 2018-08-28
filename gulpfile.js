@@ -163,8 +163,8 @@ gulp.task('distCSS', function() {
 		.pipe(postcss([
 			autoprefixer({ browsers: 'last 2 versions' }),
 			MQpacker({
-				sort: true
-			})
+				sort: false
+      })
 		]))
     .pipe(cleanCSS({ compatibility: 'ie10' }))
     .pipe(rename({ suffix: '.min' }))

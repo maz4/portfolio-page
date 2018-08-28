@@ -3,12 +3,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title__inner {
   @include inner-padding($padding-four);
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  // padding-top: 15rem;
+  // padding-bottom: 15rem;
   text-align: center;
 }
 
