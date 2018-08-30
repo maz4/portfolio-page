@@ -68,10 +68,10 @@
   background-color: $colour-gray-six;
 
   &::after {
-    content: "50%";
     position: absolute;
     top: 0;
     left: 0;
+    padding-right: 0.4rem;
     width: 50%;
     height: 2.5rem;
     font-size: $font-size-seven;
@@ -81,6 +81,89 @@
     text-align: right;
   }
 }
+
+.skills__bar--html{
+  &::after{
+    content: "90%";
+    width: 90%;
+    @include animation('html', 3s)
+  }
+}
+
+.skills__bar--css{
+  &::after{
+    content: "90%";
+    width: 90%;
+    @include animation('css', 3s)
+  }
+}
+
+.skills__bar--js{
+  &::after{
+    content: "50%";
+    width: 50%;
+    @include animation('js', 3s)
+  }
+}
+
+.skills__bar--sass {
+  &::after{
+    content: "60%";
+    width: 60%;
+    @include animation('sass', 3s)
+  }
+}
+
+.skills__bar--bem {
+  &::after{
+    content: "80%";
+    width: 80%;
+    @include animation('bem', 3s)
+  }
+}
+
+.skills__bar--npm {
+  &::after{
+    content: "60%";
+    width: 60%;
+    @include animation('npm', 3s)
+  }
+}
+
+.skills__bar--gulp {
+  &::after{
+    content: "60%";
+    width: 60%;
+    @include animation('gulp', 3s)
+  }
+}
+
+.skills__bar--flexbox {
+  &::after{
+    content: "90%";
+    width: 90%;
+    @include animation('flexbox', 3s)
+  }
+}
+
+.skills__bar--git {
+  &::after{
+    content: "55%";
+    width: 55%;
+    @include animation('git', 3s)
+  }
+}
+
+@include keyframe('html', 90%);
+@include keyframe('css', 90%);
+@include keyframe('js', 50%);
+@include keyframe('sass', 60%);
+@include keyframe('bem', 80%);
+@include keyframe('npm', 60%);
+@include keyframe('gulp', 60%);
+@include keyframe('flexbox', 90%);
+@include keyframe('git', 55%);
+
 
 // Tablet screen
 @include screen-size($tablet-screen) {

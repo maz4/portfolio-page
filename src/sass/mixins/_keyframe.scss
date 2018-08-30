@@ -1,0 +1,10 @@
+@mixin keyframe($name, $width) {
+  @keyframes #{$name} {
+    from {
+      width: 0;
+    }
+    to {
+      width: $width;
+    }
+  }
+}
