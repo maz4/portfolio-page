@@ -77,16 +77,8 @@ gulp.task('devCSS', function() {
 // Copy and minify JS
 gulp.task('devJS', function() {
   return gulp.src([
-      'node_modules/picturefill/dist/picturefill.js',
-      'node_modules/mustache/mustache.js',
-      './src/js/mobile-menu.js',
-      './src/js/google-map.js',
-      './src/js/counter.js',
-      './src/js/date-counter.js',
-      './src/js/people-counter.js',
-      './src/js/photo-selector.js',
-      './src/js/send-form.js',
-      './src/js/main.js'
+    './src/js/menu.js',
+    './src/js/main.js'
     ])
 		.pipe(concat('main.js'))
     .pipe(gulp.dest(paths.tmpJSdest))
@@ -174,15 +166,7 @@ gulp.task('distCSS', function() {
 // Copy and minify JS
 gulp.task('distJS', function() {
   return gulp.src([
-      'node_modules/picturefill/dist/picturefill.js',
-      'node_modules/mustache/mustache.js',
-      './src/js/mobile-menu.js',
-      './src/js/google-map.js',
-      './src/js/counter.js',
-      './src/js/date-counter.js',
-      './src/js/people-counter.js',
-      './src/js/photo-selector.js',
-      './src/js/send-form.js',
+      './src/js/menu.js',
       './src/js/main.js'
     ]).pipe(concat('main.js'))
     .pipe(uglify())

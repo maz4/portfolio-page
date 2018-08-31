@@ -6,10 +6,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  max-height: 50rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .nav-menu__element {
-  height: 5.5rem;
+  height: 6rem;
   color: $colour-white-one;
   text-align: center;
   border-bottom: .1rem solid;
@@ -26,7 +29,7 @@
   color: $colour-white-one;
   font-size: $font-size-six;
   font-weight: $font-bold;
-  line-height: 5.5rem;
+  line-height: 6rem;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $colour-brown-one;
@@ -69,8 +72,14 @@
   }
 }
 
-.nav-menu__toggle--close {
-  background-image: url("../img/icon-menu--white.svg");
+.nav-menu--close {
+  .nav-menu__list {
+    max-height: 0;
+  }
+
+  .nav-menu__toggle {
+    background-image: url("../img/icon-menu--white.svg");
+  }
 }
 
 // Tablet Screen
