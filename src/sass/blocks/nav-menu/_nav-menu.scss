@@ -113,7 +113,16 @@
   .nav-menu__toggle {
     display: none;
   }
+
+  .nav-menu--close {
+    .nav-menu__list  {
+      max-height: none;
+      transition: none;
+    }
+  }
 }
+
+
 
 // Desktop screen
 @include screen-size($desktop-screen) {
