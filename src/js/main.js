@@ -7,7 +7,7 @@
     menu.init(menuElem);
   }
 
-  var linkElem = document.querySelectorAll('.nav-menu-link');
+  var linkElem = document.querySelectorAll('.nav-menu__link');
   if (linkElem.length) {
     for (var i = 0; i < linkElem.length; i++) {
       var link = Object.create(portfolio.SmoothScroll);

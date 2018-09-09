@@ -1,30 +1,46 @@
-function smoothScroll(target, duration) {
-  var target = document.querySelector(target);
-  var targetPosition = target.getBoundingClientRect().top;
-  var startPosition = window.pageYOffset;
-  var distance = targetPosition - startPosition;
-  var startTime = null;
+(function (window) {
+  'use strict';
 
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    var timeElapsed = currentTime - startTime;
-    var run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
+  window.portfolio = window.portfolio || {};
+
+  window.portfolio.SmoothScroll = {
+    init: function (linkElem) {
+      this.linkElem = linkElem;
+      this.targetIdStr = this.linkElem.href.split('').indexOf('#');
+      this.targetId = this.linkElem.href.slice(this.targetIdStr);
+      this.target = document.querySelector(this.targetId);
+      this.targetPosition = this.target.getBoundingClientRect().top;
+      this.startPosition = window.pageYOffset;
+      this.distance = this.targetPosition - this.startPosition;
+      this.startTime = null;
+      this.duration = 1000;
+      this.linkElem.removeAttribute("href");
+      this.menuLink();
+    },
+
+    ease: function (timeE, startP, dist, durat) {
+      timeE /= durat / 2;
+      if (timeE < 1) return dist / 2 * timeE * timeE + startP;
+      timeE--;
+      return -dist / 2 * (timeE * (timeE - 2) - 1) + startP;
+    },
+
+    animation: function (currentTime) {
+      if (this.startTime === null) this.startTime = currentTime;
+      var timeElapsed = currentTime - this.startTime;
+      var run = this.ease(timeElapsed, this.startPosition, this.distance, this.duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < this.duration) requestAnimationFrame(this.animation.bind(this));
+    },
+
+    menuLink: function () {
+      this.linkElem.addEventListener('click', this.onClick.bind(this));
+    },
+
+    onClick: function () {
+      requestAnimationFrame(this.animation.bind(this));
+      this.linkElem.setAttribute('href', this.targetId);
+      this.init(this.linkElem);
+    }
   }
-
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
-}
-
-var titleButton = document.querySelector('.title__link');
-
-titleButton.addEventListener('click', function () {
-  smoothScroll('#summary', 1000);
-});
+}(window));
