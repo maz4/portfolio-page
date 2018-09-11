@@ -6,16 +6,20 @@
   window.portfolio.SmoothScroll = {
     init: function (linkElem) {
       this.linkElem = linkElem;
-      this.targetIdStr = this.linkElem.href.split('').indexOf('#');
-      this.targetId = this.linkElem.href.slice(this.targetIdStr);
+      this.targetId = this.linkElem.getAttribute('href');
       this.target = document.querySelector(this.targetId);
       this.targetPosition = this.target.getBoundingClientRect().top;
       this.startPosition = window.pageYOffset;
       this.distance = this.targetPosition - this.startPosition;
       this.startTime = null;
       this.duration = 1000;
-      this.linkElem.removeAttribute("href");
       this.menuLink();
+    },
+
+    srcollSetup: function(){
+      this.startPosition = window.pageYOffset;
+      this.distance = this.targetPosition - this.startPosition;
+      this.startTime = null;
     },
 
     ease: function (timeE, startP, dist, durat) {
@@ -38,9 +42,11 @@
     },
 
     onClick: function () {
+      console.log(this.startPosition, this.targetPosition);
+      event.preventDefault();
+      this.srcollSetup();
+      console.log(this.startPosition, this.targetPosition);
       requestAnimationFrame(this.animation.bind(this));
-      this.linkElem.setAttribute('href', this.targetId);
-      this.init(this.linkElem);
     }
   }
 }(window));
