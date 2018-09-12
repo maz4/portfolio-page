@@ -17,9 +17,9 @@
     }
   }
 
-  var welcomeScrollButton = document.querySelector('.title__link');
-  if(welcomeScrollButton){
+  var startScrollButton = document.querySelector('.title__link');
+  if(startScrollButton){
     var scrollButton = Object.create(portfolio.SmoothScroll);
-    scrollButton.init(welcomeScrollButton);
+    scrollButton.init(startScrollButton);
   }
 }(window.portfolio || {}));
