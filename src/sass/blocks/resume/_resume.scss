@@ -39,6 +39,10 @@
   .resume__paragraph {
     text-align: center;
   }
+
+  .resume__button {
+    margin: 0 auto;
+  }
 }
 
 // Desktop screen
@@ -61,7 +65,6 @@
   }
 
   .resume__button {
-    margin: 0 auto;
     width: 18.5rem;
     height: 4.5rem;
     font-size: $font-size-five;
