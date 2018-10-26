@@ -124,22 +124,11 @@
 
 // Desktop screen
 @include screen-size($desktop-screen) {
-  .nav-menu {
-    position: absolute;
-    bottom: 0;
-    height: 6rem;
-    width: 100%;
-  }
-
   .nav-menu__list {
     height: 6rem;
   }
   .nav-menu__element {
     margin-right: 4rem;
-    
-    &:first-child {
-      margin-left: 10%;
-    }
   }
   
   .nav-menu__link {
