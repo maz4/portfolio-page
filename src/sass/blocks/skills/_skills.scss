@@ -13,12 +13,12 @@
 }
 
 .skills__link {
+  @include button($colour-green-two, $font-size-five);
+  
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
   text-decoration: none;
-}
-
-.skills__button {
-  @include button($colour-green-two);
-  width: 10rem;
 
   &:hover {
     opacity: .7;
@@ -167,11 +167,6 @@
 
 // Tablet screen
 @include screen-size($tablet-screen) {
-  .skills__link {
-    display: block;
-    text-align: center;
-  }
-
   .skills__list {
     display: flex;
     flex-direction: row;
@@ -230,12 +225,6 @@
   }
 
   .skills__link {
-    text-align: left;
-  }
-  .skills__button {
-    width: 18.5rem;
-    height: 4.5rem;
-    font-size: $font-size-five;
-    line-height: $line-height-five;
+    width: 20rem;
   }
 }

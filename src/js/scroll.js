@@ -8,7 +8,6 @@
       this.linkElem = linkElem;
       this.targetId = this.linkElem.getAttribute('href');
       this.target = document.querySelector(this.targetId);
-      this.targetPosition = this.target.getBoundingClientRect().top;
       this.duration = 1000;
       this.setEvents();
     },
@@ -42,6 +41,7 @@
 
     onClick: function (event) {
       event.preventDefault();
+      this.targetPosition = this.target.getBoundingClientRect().top;
       this.startPosition = window.pageYOffset;
       this.distance = this.targetPosition - this.startPosition;
       this.startTime = null;
