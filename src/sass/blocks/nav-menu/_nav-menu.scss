@@ -18,9 +18,19 @@
   border-bottom: .1rem solid;
   border-color: $colour-gray-three;
   cursor: pointer;
+  background-color: $colour-brown-one;
+
 
   &:last-child {
     border-bottom: none;
+  }
+
+  &:hover {
+    background-color: $colour-brown-two;
+  }
+
+  &:active {
+    background-color: $colour-gray-four;
   }
 }
 
@@ -32,17 +42,6 @@
   line-height: 6rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $colour-brown-one;
-
-  &:hover {
-    color: $colour-white-one;
-    background-color: $colour-brown-two;
-  }
-
-  &:active {
-    color: $colour-black-two;
-    background-color: $colour-gray-four;
-  }
 }
 
 .nav-menu__link--active {
@@ -87,26 +86,37 @@
   .nav-menu__list {
     display: flex;
     flex-direction: row;
-    background-color: $colour-brown-one;
+    position: absolute;
+    width:100%;
+    background-color: rgba($colour-black-one, 0.7);
   }
 
   .nav-menu__element {
     display: inline-block;
     margin-right: 3%;
     border: none;
+    background-color: transparent;
 
     &:first-child {
       margin-left: 5%;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  
+    &:active {
+      background-color: transparent;
     }
   }
 
   .nav-menu__link {
     &:hover {
-      background-color: transparent;
+      color: $colour-gray-four;
     }
 
     &:active {
-      background-color: transparent;
+      opacity: 0.3;
     }
   }
 

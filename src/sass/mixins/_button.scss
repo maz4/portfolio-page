@@ -1,10 +1,11 @@
-@mixin button($colour) {
+@mixin button($colour, $fontSize) {
+  display: block;
   border: .2rem;
   border-style: solid;
   border-color: $colour;
   background: transparent;
   color: $colour;
-  font-size: $font-size-seven;
+  font-size: $fontSize;
   font-weight: $font-bold;
   line-height: $line-height-two;
   text-align: center;
