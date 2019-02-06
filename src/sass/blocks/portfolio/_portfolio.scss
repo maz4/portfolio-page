@@ -13,18 +13,21 @@
   @include paragraph($font-size-seven);
 }
 
-.portfolio__wrapper {
+.portfolio__list {
   padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
-.portfolio__link {
-  &:active {
-    color: $colour-black-one;
-  }
+.portfolio__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.portfolio__thumbnail {
+.portfolio__link {
+  display: block;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -32,7 +35,7 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(0.95);
   }
 
   &:active {
@@ -42,13 +45,13 @@
 
 // Tablet screen
 @include screen-size($tablet-screen){
-  .portfolio__wrapper {
+  .portfolio__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .portfolio__link {
+  .portfolio__item {
     width:45%;
     flex-shrink: 1;
     flex-grow: 0;
@@ -74,11 +77,11 @@
     line-height: $line-height-two;
   }
 
-  .portfolio__wrapper {
+  .portfolio__list {
     justify-content: flex-start;
   }
 
-  .portfolio__link {
+  .portfolio__item {
     flex-basis: 30%;
     margin-right: 4.4rem;
 
